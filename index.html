@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Money Master</title>
+    <script src="https://kit.fontawesome.com/cbd11b6038.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <header class="mt-5">
+        <h1 class="font-bold text-3xl md:text-5xl text-center text-sky-500">Money Master <i
+                class="fa-solid fa-sack-dollar text-yellow-600 text-2xl md:text-4xl"></i>
+        </h1>
+    </header>
+    <main>
+        <section class="max-w-7xl mx-auto my-5 grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div class="">
+                <img class=" rounded" src="assets/money.png" alt="">
+            </div>
+            <div class="bg-slate-100 px-5">
+                <div>
+                    <h2 class="font-medium text-2xl text-center my-7">Income</h2>
+                    <div class="flex justify-between mb-4">
+                        <label class="text-base md:text-lg font-medium w-[15%]" for="income">Income</label>
+                        <div class="w-[80%] ml-5 md:ml-10">
+                            <input type="number" name="" id="income" class="w-full p-2 rounded-lg bg-[#DCDCDC]">
+                        </div>
+                    </div>
+                </div>
+                <div class="">
+                    <h2 class="font-medium text-2xl text-center my-7">Expense</h2>
+                    <div class="flex justify-between mb-4">
+                        <label class="w-[15%] text-base md:text-lg font-medium" for="food">Food</label>
+                        <div class="w-[80%] ml-5 md:ml-10">
+                            <input type="number" name="" id="food" class="w-full p-2 rounded-lg bg-[#DCDCDC]">
+                        </div>
+                    </div>
+                    <div class="flex justify-between mb-4">
+                        <label class="w-[15%] text-base md:text-lg font-medium" for="rent">Rent</label>
+                        <div class="w-[80%] ml-5 md:ml-10">
+                            <input type="number" name="" id="rent" class="w-full p-2 rounded-lg bg-[#DCDCDC]">
+                        </div>
+                    </div>
+                    <div class="flex justify-between mb-4">
+                        <label class="w-[15%] text-base md:text-lg font-medium" for="clothes">Clothes</label>
+                        <div class="w-[80%] ml-5 md:ml-10">
+                            <input type="number" name="" id="clothes" class="w-full p-2 rounded-lg bg-[#DCDCDC]">
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <button id="calculate"
+                            class="bg-sky-500 hover:bg-sky-600 font-bold text-xl text-white py-3 px-14 rounded ">Calculate</button>
+                    </div>
+                </div>
+                <div>
+                    <h2 class="font-medium text-lg text-center mt-5">Total Expenses: <span id="total-expense"></span>
+                    </h2>
+                    <h2 class="font-medium text-lg text-center mt-5">Balance: <span id="balance"></span></h2>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-5">
+                    <div class="flex justify-between items-center">
+                        <label class="w-[15%] text-base md:text-lg font-medium" for="food">Save</label>
+                        <div class="ml-5 md:ml-10 w-[80%]">
+                            <input type="number" name="" id="save-Field"
+                                class="w-full p-2 text-center rounded-lg bg-[#DCDCDC]">
+                        </div>
+                        <h4 class="inline ml-4">%</h4>
+                    </div>
+                    <div class="text-center md:text-left">
+                        <button id="saveBtn"
+                            class="bg-sky-500 hover:bg-sky-600 font-bold text-xl text-white py-3 px-14 rounded ">Save</button>
+                    </div>
+                </div>
+                <div>
+                    <h2 class="font-medium text-lg text-center mt-5">Saving Amount: <span id="saving-amount"></span>
+                    </h2>
+                    <h2 class="font-medium text-lg text-center mt-5">Remaining Balance: <span
+                            id="remaining-balance"></span></h2>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
